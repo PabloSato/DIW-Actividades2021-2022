@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+@font-face {
+  font-family: nunito;
+  src: url(fonts/Nunito_Sans/NunitoSans-Bold.ttf);
+}
+@font-face {
+  font-family: halant;
+  src: url(fonts/Halant/Halant-Regular.ttf);
+}
+p,
+h6 {
+  font-family: "halant";
+}
+h2,
+h3,
+h4 {
+  font-family: "nunito";
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*GENERAAAAAL*/
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 1.2em;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid #000;
+  margin-bottom: 0.6em;
+}
+
+.hide {
+  display: none;
+}
+
+/*HEADER*/
+header {
+  padding: 1.5em 0;
+  background-color: rgba(232, 153, 14, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: rgb(56, 118, 189);
+}
+/*SECCIONES*/
+section {
+  width: 100%;
+  position: relative;
+  background-color: rgba(253, 227, 203, 0.5);
+}
+article {
+  min-height: 900px;
+}
+article:hover {
+  border: 1px solid rgb(56, 118, 189);
+}
+h2:hover {
+  color: rgb(56, 118, 189);
+}
+#btn1,
+#btn2,
+#btn3,
+#btn4,
+#btn5 {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  margin-top: 0.2em;
+  margin-right: 0.3em;
+}
+._9,
+._7 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+._9 {
+  transform: rotate(-45deg) translate(-10px, 7px);
+}
+._7 {
+  transform: rotate(45deg);
+}
+/*-------------------------------------------------------SECCION IZQ*/
+
+/*------------------------------------------------SECCION LARGA*/
+
+#postPro {
+  z-index: 1;
+}
+#formula1 {
+  top: 3em;
+  z-index: 2;
+}
+#mediaset {
+  top: 6em;
+  z-index: 3;
+}
+#cadena100 {
+  top: 9em;
+  z-index: 4;
+}
+#radio {
+  top: 12em;
+  z-index: 5;
+}
+.largo {
+  border: 1px solid #fff;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(253, 227, 203);
+}
+.largo:hover {
+  cursor: pointer;
+  border: 3px solid #fff inset;
+}
+.largo > #imgCurro {
+  position: relative;
+}
+.largo > #imgCurro > img {
+  width: 100%;
+}
+.largo > #imgCurro > #textCurro {
+  width: 100%;
+  position: absolute;
+  left: 16px;
+  top: 0.5px;
+  color: white;
+}
+.largo > #imgCurro > #textCurro > h2 {
+  font-size: 2.5em;
+}
+.largo > #imgCurro > #textCurro > h3 {
+  font-size: 0.8em;
+  border-bottom: 2px solid white;
+}
+.largo > #infoCurro {
+  padding: 1em;
+  font-size: 1.2em;
+  word-spacing: 0.6em;
+}
+.largo > #infoCurro > p {
+  margin-bottom: 1em;
+}

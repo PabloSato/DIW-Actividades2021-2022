@@ -1,0 +1,477 @@
+<html lang="es">
+  <head>
+    <title>Actividad 1 - CV</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="javascript/js.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <!------------------------------------------------------------------CABECERA-->
+      <header>
+        <h1>Pablo Fernández Sato</h1>
+      </header>
+      <!------------------------------------------------------------------SECTION-->
+      <section>
+        <!------------------------------------------------------------------COLUMNA IZQ-->
+        <article id="infPerso">
+          <div id="btn" class="hide" onclick="slideAsideDown('infPerso')">
+            <div class="_9"></div>
+            <div class="_8"></div>
+            <div class="_7"></div>
+          </div>
+          <div class="slHid">
+            <h3 onclick="menuDisplay('cuerpo')">Sobre mí</h3>
+            <div id="cuerpo">
+              <p>
+                ¿Quién soy? Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum
+              </p>
+            </div>
+          </div>
+          <div class="slHid">
+            <h3 onclick="menuDisplay('contacto')">Contacto</h3>
+            <div id="contacto">
+              <div class="cont">
+                <div class="img">
+                  <img src="img/telefon.png" alt="telefono" />
+                </div>
+                <div>
+                  <h4><a href="tel:+99 999 999 999">+99 999 999 999</a></h4>
+                </div>
+              </div>
+              <div class="cont">
+                <div class="img">
+                  <img src="img/carta.png" alt="email" />
+                </div>
+                <div>
+                  <h4>
+                    <a href="mailto:pablofersato@gmail.com"
+                      >pablofersato@gmail.com</a
+                    >
+                  </h4>
+                </div>
+              </div>
+              <div class="cont">
+                <div class="img">
+                  <img src="img/casa.png" alt="direccion" />
+                </div>
+                <div>
+                  <h4 class="small">
+                    <a
+                      href="https://www.google.es/maps/place/Madrid/@40.4378698,-3.819619,11z/data=!3m1!4b1!4m5!3m4!1s0xd422997800a3c81:0xc436dec1618c2269!8m2!3d40.4167754!4d-3.7037902?hl=es"
+                      target="_blank"
+                    >
+                      Calle Kalea, 75, Madrid <br />
+                      España</a
+                    >
+                  </h4>
+                </div>
+              </div>
+              <div class="cont">
+                <div class="img"><img src="img/github.png" alt="github" /></div>
+                <div>
+                  <h4>
+                    <a href="https://github.com/PabloSato" target="_blank"
+                      >github.com/PabloSato</a
+                    >
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slHid">
+            <h3 onclick="menuDisplay('form')">Formación</h3>
+            <div id="form">
+              <dl>
+                <dt>2020-2022 Desarrollo de Aplicaciones Web</dt>
+                <dd>
+                  <a href="https://www.edix.com/es/" target="_blank"
+                    >Instituto Tecnológico Edix (Madrid)</a
+                  >
+                </dd>
+              </dl>
+              <dl>
+                <dt>2006-2008 Técnico Superior de Sonido</dt>
+                <dd>
+                  <a href="https://www.cev.com/" target="_blank"
+                    >Escuela Superior de Comunicación, Imagen y Sonido - CEV
+                    (Madrid)</a
+                  >
+                </dd>
+              </dl>
+            </div>
+            <a id="2" onclick="btn_mas()">+mas</a>
+          </div>
+          <div class="hide" id="0">
+            <h3><small>Formación Complementaria</small></h3>
+            <div id="form">
+              <dl>
+                <dt>MEAN STACK & FULL STACK</dt>
+                <dd>
+                  <a href="https://www.edix.com/es/" target="_blank"
+                    >Instituto Edix & UNIR</a
+                  >
+                </dd>
+              </dl>
+              <dl>
+                <dt>Dante Certification Level 1 y 2</dt>
+                <dd>
+                  <a href="https://www.audinate.com/" target="_blank"
+                    >Audinate</a
+                  >
+                </dd>
+              </dl>
+              <dl>
+                <dt>User Pro Tools Certification</dt>
+                <dd>
+                  <a
+                    href="https://www.avid.com/es/certifications/pro-tools-user"
+                    target="_blank"
+                    >Avid Pro Tools</a
+                  >
+                </dd>
+              </dl>
+            </div>
+
+            <a onclick="btn_menos()">-menos</a>
+          </div>
+          <div id="1" class="slHid">
+            <h3 onclick="menuDisplay('inter')">Intereses</h3>
+            <div id="inter">
+              <div>
+                <div>
+                  <img src="img/intere/cine.png" alt="Cine" />
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img src="img/intere/caminar.png" alt="Senderismo" />
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img src="img/intere/libro1.png" alt="Lectura" />
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img src="img/intere/musica.png" alt="Música" />
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img src="img/intere/computer1.png" alt="Programación" />
+                </div>
+              </div>
+              <div>
+                <div>
+                  <img src="img/intere/climb.png" alt="Escalada" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <!------------------------------------------------------------------COLUMNA DERECHA-->
+        <article id="infTrab">
+          <h3>Experiencia Laboral</h3>
+          <div id="jobList">
+            <div class="job">
+              <h4>
+                <a onclick="slideAsideUp('postPro')"
+                  >2019-2021 Post-Producción de Sonido</a
+                >
+              </h4>
+              <h5>
+                <a
+                  href="https://www.telefonicaserviciosaudiovisuales.com/en/telefonica-broadcast-services/"
+                  target="_blank"
+                  >Telefónica Broadcast Services - TBS</a
+                >
+              </h5>
+              <p>
+                Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum
+              </p>
+            </div>
+            <div class="job">
+              <h4>
+                <a onclick="slideAsideUp('formula1')"
+                  >2017-2018 Retransmisión de GP Fromula1</a
+                >
+              </h4>
+              <h5>
+                <a
+                  href="https://www.telefonicaserviciosaudiovisuales.com/en/telefonica-broadcast-services/"
+                  target="_blank"
+                  >Telefónica Broadcast Services - TBS</a
+                >
+              </h5>
+              <p>
+                Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim ve©niam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum
+              </p>
+            </div>
+            <div class="job">
+              <h4>
+                <a onclick="slideAsideUp('mediaset')"
+                  >2016-2018 Operador de Sonido</a
+                >
+              </h4>
+              <h5>
+                <a href="https://www.mediaset.es/" target="_blank"
+                  >Meditaset España</a
+                >
+              </h5>
+              <p>
+                Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum
+              </p>
+            </div>
+            <div class="job">
+              <h4>
+                <a onclick="slideAsideUp('cadena100')"
+                  >2016 Técnico de Sonido <i>Buenos Días Javi Nieves</i></a
+                >
+              </h4>
+              <h5>
+                <a href="https://www.cadena100.es/" target="_blank"
+                  >Cadena 100 - Grupo Popular</a
+                >
+              </h5>
+              <p>
+                Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum
+              </p>
+            </div>
+            <div class="job">
+              <h4>
+                <a onclick="slideAsideUp('radio')"
+                  >2010-2016 Técnico de Sonido en Continuidad de Emisiones</a
+                >
+              </h4>
+              <h5>
+                <a href="https://www.cope.es/" target="_blank"
+                  >Cadena COPE - Grupo Popular</a
+                >
+              </h5>
+              <p>
+                Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum
+              </p>
+            </div>
+            <div class="green"></div>
+          </div>
+        </article>
+        <!------------------------------------------------------------------LARGO-->
+        <article id="postPro" class="largo">
+          <div id="imgCurro">
+            <div id="btn1" onclick="slideAsideDown('infPerso')">
+              <div class="_9"></div>
+              <div class="_8"></div>
+              <div class="_7"></div>
+            </div>
+            <img src="img/jobs/postpro.png" alt="postproduccion" />
+            <div id="textCurro">
+              <h2>Post-Producción de Sonido</h2>
+              <h3>Telefónica Broadcast Services - TBS</h3>
+            </div>
+          </div>
+          <div id="infoCurro">
+            <p>
+              Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <p>
+              Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </article>
+        <article id="formula1" class="largo">
+          <div id="imgCurro">
+            <div id="btn1" onclick="slideAsideDown('infPerso')">
+              <div class="_9"></div>
+              <div class="_8"></div>
+              <div class="_7"></div>
+            </div>
+            <img src="img/jobs/formula1.jpeg" alt="formula1" />
+            <div id="textCurro">
+              <h2>Retransmisión de GP Fromula 1</h2>
+              <h3>Telefónica Broadcast Services - TBS</h3>
+            </div>
+          </div>
+          <div id="infoCurro">
+            <p>
+              Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <p>
+              Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </article>
+        <article id="mediaset" class="largo">
+          <div id="imgCurro">
+            <div id="btn1" onclick="slideAsideDown('infPerso')">
+              <div class="_9"></div>
+              <div class="_8"></div>
+              <div class="_7"></div>
+            </div>
+            <img src="img/jobs/mediaset.jpeg" alt="mediaset" />
+            <div id="textCurro">
+              <h2>Operador de Sonido</h2>
+              <h3>Mediaset España</h3>
+            </div>
+          </div>
+          <div id="infoCurro">
+            <p>
+              Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <p>
+              Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </article>
+        <article id="cadena100" class="largo">
+          <div id="imgCurro">
+            <div id="btn1" onclick="slideAsideDown('infPerso')">
+              <div class="_9"></div>
+              <div class="_8"></div>
+              <div class="_7"></div>
+            </div>
+            <img src="img/jobs/radioFormula.jpeg" alt="cadena100" />
+            <div id="textCurro">
+              <h2>Técnico de Sonido <i>Buenos Días Javi Nieves</i></h2>
+              <h3>Cadena 100 - Grupo Popular</h3>
+            </div>
+          </div>
+          <div id="infoCurro">
+            <p>
+              Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <p>
+              Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </article>
+        <article id="radio" class="largo">
+          <div id="imgCurro">
+            <div id="btn1" onclick="slideAsideDown('infPerso')">
+              <div class="_9"></div>
+              <div class="_8"></div>
+              <div class="_7"></div>
+            </div>
+            <img src="img/jobs/radio.jpeg" alt="radio" />
+            <div id="textCurro">
+              <h2>Técnico de Sonido en Continuidad de Emisiones</h2>
+              <h3>Cadena COPE - Grupo Popular</h3>
+            </div>
+          </div>
+          <div id="infoCurro">
+            <p>
+              Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <p>
+              Tareas. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+          </div>
+        </article>
+      </section>
+    </div>
+  </body>
+</html>

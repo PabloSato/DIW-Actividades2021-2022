@@ -1,0 +1,385 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+@font-face {
+  font-family: nunito;
+  src: url(fonts/Nunito_Sans/NunitoSans-Bold.ttf);
+}
+@font-face {
+  font-family: halant;
+  src: url(fonts/Halant/Halant-Regular.ttf);
+}
+p,
+h5 {
+  font-family: "halant";
+}
+h2,
+h3,
+h4 {
+  font-family: "nunito";
+}
+h3 .blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+
+/*GENERAAAAAL*/
+.wrap {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 1.2em;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid #000;
+  margin-bottom: 0.6em;
+}
+.hide {
+  display: none;
+}
+/*HEADER*/
+header {
+  padding: 1.5em 0;
+  background-color: rgba(232, 153, 14, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: rgb(56, 118, 189);
+}
+/*SECCIONES*/
+section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 4fr; /*-----------------------------------------OJO 2fr*/
+  grid-auto-rows: 60em;
+  background-color: rgba(253, 227, 203, 0.5);
+}
+/*-------------------------------------------------------SECCION IZQ*/
+#btn {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  top: 0;
+  margin-top: -2em;
+  margin-left: -2.6em;
+}
+.btn_block {
+  display: block;
+  animation: fade-in 2.7s;
+}
+#btn1 {
+  display: none;
+}
+
+._9,
+._8,
+._7 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change ._9 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+  animation: fade-out 2s;
+}
+.change ._8 {
+  opacity: 0;
+}
+.change ._7 {
+  transform: rotate(45deg) translate(-8px, -8px);
+  animation: fade-out 2s;
+}
+#infPerso {
+  padding: 2em 3em;
+  width: 100%; /*----------------------------------------------------------OJO! 100%*/
+  display: grid;
+  grid-template-rows: repeat(4, 4fr);
+  gap: 1em;
+  background-color: rgba(56, 118, 189, 0.4);
+}
+#infPerso > div > h3 {
+  font-size: 1em;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid #000;
+  margin-bottom: 0.6em;
+}
+#infPerso > div > #contacto {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 0.2em;
+}
+#infPerso > div > #contacto > .cont {
+  width: 100%;
+  padding: 0.3em;
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+  gap: 0.5em;
+}
+#infPerso > div > #contacto > .cont > div {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 0.7em;
+}
+#infPerso > div > #contacto > .cont > div > h4 > a {
+  text-decoration: none;
+  color: #000;
+}
+#infPerso > div > #contacto > .cont > div > h4 > a:hover {
+  color: rgba(255, 255, 255, 0.4);
+}
+#infPerso > div > #contacto > .cont > div > img {
+  width: 2em;
+  height: 2em;
+}
+#infPerso > div > #form {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+  margin-bottom: 1em;
+}
+#infPerso > div > #form > dl > dt {
+  font-size: 1em;
+  font-weight: bold;
+}
+#infPerso > div > #form > dl > dd {
+  font-size: 0.85em;
+  word-spacing: -1.5px;
+  margin-left: 1.5em;
+}
+#infPerso > div > #form > dl > dd > a {
+  text-decoration: none;
+  color: #000;
+}
+#infPerso > div > #form > dl > dd > a:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.5);
+}
+#infPerso > div > a {
+  margin-top: 0.7em;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+}
+#infPerso > div > a:hover {
+  text-decoration: underline;
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+#infPerso > div > #inter {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  gap: 1em;
+}
+#infPerso > div > #inter > div > div > img {
+  margin: 0 auto;
+  width: 3em;
+  height: 3em;
+}
+
+/*------------------------------------------------SECCION DERE*/
+#infTrab {
+  padding: 2em 3em;
+  width: 100%;
+}
+#infTrab > #jobList {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(4, 4fr);
+  gap: 2em;
+  /* min-height: 55em; */
+}
+#infTrab > #jobList > .job {
+  line-height: 1.2em;
+}
+#infTrab > #jobList > .job > h4 {
+  font-size: 1.15em;
+  font-weight: bold;
+  word-spacing: 0.5em;
+}
+#infTrab > #jobList > .job > h4 > a {
+  cursor: pointer;
+}
+#infTrab > #jobList > .job > h4 > a:hover {
+  color: rgb(56, 118, 189);
+  font-weight: bolder;
+}
+#infTrab > #jobList > .job > h5 {
+  font-style: oblique;
+  font-weight: lighter;
+  font-size: 1em;
+  line-height: 1.5em;
+  margin-left: 0.5em;
+}
+#infTrab > #jobList > .job > h5 > a {
+  text-decoration: none;
+  color: #000;
+}
+#infTrab > #jobList > .job > h5 > a:hover {
+  text-decoration: underline;
+  color: rgba(56, 118, 189, 0.7);
+}
+#infTrab > #jobList > .job > p {
+  margin-top: 0.5em;
+}
+
+/*------------------------------------------------SECCION LARGA*/
+.largo {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-rows: 2fr 4fr;
+  gap: 1em;
+  display: none;
+}
+.largo > #imgCurro {
+  position: relative;
+}
+.largo > #imgCurro > img {
+  width: 100%;
+}
+.largo > #imgCurro > #textCurro {
+  width: 100%;
+  position: absolute;
+  left: 16px;
+  bottom: 8px;
+  color: white;
+}
+.largo > #imgCurro > #textCurro > h2 {
+  font-size: 2.5em;
+}
+.largo > #imgCurro > #textCurro > h3 {
+  font-size: 0.8em;
+  border-bottom: 2px solid white;
+}
+.largo > #infoCurro {
+  padding: 1em;
+  font-size: 1.2em;
+  word-spacing: 0.6em;
+}
+.largo > #infoCurro > p {
+  margin-bottom: 1em;
+}
+/*-----------------------------------KEY-FRAMES*/
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+/*-----------------------------------MEDIAQUERYS*/
+/*PC PANTALLA 900-1300*/
+@media screen and (max-width: 1170px) and (min-width: 900px) {
+  .wrap {
+    width: 900px;
+  }
+  section {
+    grid-auto-rows: 77em;
+  }
+}
+/*IPAD 768-900*/
+@media screen and (max-width: 900px) and (min-width: 768px) {
+  .wrap {
+    width: 768px;
+  }
+  section {
+    grid-auto-rows: 87em;
+  }
+}
+/*IPAD 320-768*/
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  .wrap {
+    width: 100%;
+  }
+  #btn1 {
+    display: block;
+  }
+  ._9 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  ._8 {
+    opacity: 0;
+  }
+  ._7 {
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  section {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  #infPerso {
+    grid-template-rows: repeat(4, 0.1fr);
+    gap: 0.1em;
+    margin-bottom: 0.1em;
+  }
+  #cuerpo {
+    display: none;
+  }
+  #infPerso > div > #contacto {
+    display: none;
+  }
+  #infPerso > div > #form {
+    display: none;
+  }
+  #infPerso > div > a {
+    display: none;
+  }
+  #infPerso > div > #inter {
+    display: none;
+  }
+  /*TRABAJO*/
+  #infTrab > #jobList {
+    grid-template-rows: repeat(4, 0.1fr);
+    gap: 0.7em;
+  }
+  #infTrab > #jobList > .job {
+    line-height: normal;
+  }
+  #infTrab > #jobList > .job > p {
+    display: none;
+  }
+  #infoCurro {
+    text-align: justify;
+  }
+}
